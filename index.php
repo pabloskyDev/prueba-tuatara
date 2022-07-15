@@ -70,9 +70,9 @@
 
     <div class="d-flex align-items-center p-2 bg-white about-pop">
         <div class="flex-shrink-2 about-img pe-md-5 pe-sm-0 w-45">
-            <img src="src/img/about-tuatara.png" alt="..." class="img-fluid">
+            <img src="src/img/about-tuatara.png" alt="About tuatara" class="img">
         </div>
-        <div class="flex-grow-1 ms-2 ps-md-5 ps-sm-0 text-md-start w-55 fs-6 about-text">
+        <div class="flex-grow-1 ms-2 ps-md-5 ps-sm-0 text-md-start w-55 fs-6 about-text lead">
             Tuataras, New Zealand Reptiles inspire us with ¡ts behavior to breathe what we call</br>
             Mutualism, a way of living, managing and relating with our beloved clients. Its goal is to</br>
             harvest long-term relations where transparency, trust, and communication ends in a win-win.
