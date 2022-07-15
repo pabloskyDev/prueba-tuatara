@@ -90,7 +90,7 @@
             </div>
             <div class="modal-body">
                 <form id="frm_modificar" method="put">
-                    <input type="hidden" name="id" id="id">
+                    <!-- <input type="hidden" name="id" id="id"> -->
                     <div class="mb-3">
                         <label for="docActualizar" class="form-label">Documento</label>
                         <input type="text" class="form-control" name="docActualizar" id="docActualizar">

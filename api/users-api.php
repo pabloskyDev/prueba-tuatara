@@ -79,8 +79,7 @@
     if ($_SERVER['REQUEST_METHOD'] == 'PUT')
     {
         parse_str(file_get_contents('php://input'), $_PUT);
-        header('Content-Disposition: attachment; url=users-form.php');
-        // var_dump($_PUT);
+        header('Content-Disposition: form-data; name="fieldName"; filename="users-form.php"');
 
         $id = $_GET['id'];
         $input = $_PUT;

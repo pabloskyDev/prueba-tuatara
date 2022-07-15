@@ -24,13 +24,11 @@ function modificar(id, tipo){
     var form = document.querySelector('#frm_modificar');
     var formData = new FormData(form);
 
-    /*documento = document.getElementById('docActualizar').value;
-    nombre = document.getElementById('nomActualizar').value;
-    apellido = document.getElementById('apeActualizar').value;
-    email = document.getElementById('emailActualizar').value;*/
-    
+    for(const pair of formData.entries()) {
+        // console.log(`${pair[0]}, ${pair[1]}`);
+    }
+
     url += '?id='+id;
-    // url += '?id='+id+'&documento='+documento+'&nombre='+nombre+'&apellido='+apellido+'&email='+email;
     EnviarPeticion('PUT', formData, 'Modificado');
   }
   
@@ -95,7 +93,7 @@ function DecidirAccion(data, decidir) {
     url = 'api/users-api.php';
     var frm_modificar = document.getElementById("frm_modificar").value;
 
-    document.getElementById('id').value= `${data.id}`;
+    // document.getElementById('id').value= `${data.id}`;
     document.getElementById('docActualizar').value= `${data.documento}`;
     document.getElementById('nomActualizar').value= `${data.nombre}`;
     document.getElementById('apeActualizar').value= `${data.apellido}`;
