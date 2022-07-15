@@ -10,27 +10,35 @@
 </head>
 <body>
     <div class="bg-img main-img">
-        <header class="header">
+        <header class="header p-4">
             <!-- Nav initial -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand col-md-4 d-flex justify-content-center" href="#">
+                        <img src="src/img/icons/logo.png" alt="tuatara-logo" class="img-fluid">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav m-auto">
+                    <div class="collapse navbar-collapse col-md-8" id="navbarNav">
+                        <ul class="navbar-nav col-12 d-flex justify-content-evenly">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">Full Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="users-form.php">Usuarios</a>
+                                <a class="nav-link active" aria-current="page" href="#">World Wide</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="users-form.php">
+                                    <img src="src/img/icons/nido.png" alt="nido-logo" class="img-fluid">
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <a class="btn-group nav-link" href="#">ES</a>
+                                <a class="btn-group nav-link border-start badge-white" href="#">EN</a>
                             </li>
                         </ul>
                     </div>
@@ -60,14 +68,16 @@
     <div class="bg-color bg-brands"></div>
     <div class="bg-color bg-contact"></div>
 
-    <div class="about-pop">
-        <div class="logo-about">
-            Logo
+    <!-- <div class="about-pop"> -->
+        <div class="d-flex align-items-center p-2 bg-white about-pop">
+            <div class="flex-shrink-2 about-img">
+                <img src="src/img/about-tuatara.png" alt="..." class="img-fluid">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                This is some content from a media component. You can replace this with any content and adjust it as needed.
+            </div>
         </div>
-        <div class="info-about">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident minus facilis, animi rerum minima dolor beatae aspernatur magnam, non laborum? Sed labore nihil aspernatur aut voluptatem nulla, animi qui.</p>
-        </div>
-    </div>
+    <!-- </div> -->
 
     <footer>
 
