@@ -91,7 +91,7 @@ function DecidirAccion(data, decidir) {
 
   if(decidir == 'cargarModificar'){
     // console.log('Cargar datos modificar');
-    url = 'usuarios.php';
+    url = 'api/users-api.php';
     var frm_modificar = document.getElementById("frm_modificar").value;
     console.log(data);
 
@@ -107,7 +107,7 @@ function DecidirAccion(data, decidir) {
   }
 
   if(decidir == 'Modificado'){
-    url = 'usuarios.php';
+    url = 'api/users-api.php';
     console.log(data);
 
     $("#modificarUsuario").modal('hide');
@@ -115,7 +115,7 @@ function DecidirAccion(data, decidir) {
   }
 
   if(decidir == 'Eliminado'){
-    url = 'usuarios.php';
+    url = 'api/users-api.php';
     console.log(data);
 
     $("#eliminarUsuario").modal('hide');
