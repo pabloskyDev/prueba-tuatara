@@ -78,8 +78,15 @@
     //Actualizar
     if ($_SERVER['REQUEST_METHOD'] == 'PUT')
     {
-        $input = $_POST;
-        $usuarioId = $input['id'];
+        parse_str(file_get_contents('php://input'), $_PUT);
+        header('Content-Disposition: attachment; url=users-form.php');
+        // var_dump($_PUT);
+
+        $id = $_GET['id'];
+        $input = $_PUT;
+        // echo print_r($input, true);
+
+        $usuarioId = $id;
         $fields = getParams($input);
         $sql = "
             UPDATE usuarios

@@ -28,7 +28,8 @@ function modificar(id, tipo){
     nombre = document.getElementById('nomActualizar').value;
     apellido = document.getElementById('apeActualizar').value;
     email = document.getElementById('emailActualizar').value;*/
-
+    
+    url += '?id='+id;
     // url += '?id='+id+'&documento='+documento+'&nombre='+nombre+'&apellido='+apellido+'&email='+email;
     EnviarPeticion('PUT', formData, 'Modificado');
   }
@@ -51,7 +52,7 @@ function EnviarPeticion(method, datos, decidir){
     DecidirAccion(data, decidir);
   };
   ajax.onerror = function(){
-    console.log('Tenemos un error, ', error);
+    console.log('Falló la petición, ', error);
   };
   ajax.open(method, url, true);
   ajax.send(datos);
@@ -93,7 +94,6 @@ function DecidirAccion(data, decidir) {
     // console.log('Cargar datos modificar');
     url = 'api/users-api.php';
     var frm_modificar = document.getElementById("frm_modificar").value;
-    console.log(data);
 
     document.getElementById('id').value= `${data.id}`;
     document.getElementById('docActualizar').value= `${data.documento}`;
