@@ -86,6 +86,10 @@ body, html {
     height: 100%;
 }
 
+.about-pop .about-text {
+    color: #023a47;
+}
+
 footer {
     height: 50%;
     background-color: #ffffff;

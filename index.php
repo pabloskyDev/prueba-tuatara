@@ -68,16 +68,16 @@
     <div class="bg-color bg-brands"></div>
     <div class="bg-color bg-contact"></div>
 
-    <!-- <div class="about-pop"> -->
-        <div class="d-flex align-items-center p-2 bg-white about-pop">
-            <div class="flex-shrink-2 about-img">
-                <img src="src/img/about-tuatara.png" alt="..." class="img-fluid">
-            </div>
-            <div class="flex-grow-1 ms-3">
-                This is some content from a media component. You can replace this with any content and adjust it as needed.
-            </div>
+    <div class="d-flex align-items-center p-2 bg-white about-pop">
+        <div class="flex-shrink-2 about-img pe-md-5 pe-sm-0 w-45">
+            <img src="src/img/about-tuatara.png" alt="..." class="img-fluid">
         </div>
-    <!-- </div> -->
+        <div class="flex-grow-1 ms-2 ps-md-5 ps-sm-0 text-md-start w-55 fs-6 about-text">
+            Tuataras, New Zealand Reptiles inspire us with ¡ts behavior to breathe what we call</br>
+            Mutualism, a way of living, managing and relating with our beloved clients. Its goal is to</br>
+            harvest long-term relations where transparency, trust, and communication ends in a win-win.
+        </div>
+    </div>
 
     <footer>
 
