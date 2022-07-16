@@ -61,7 +61,8 @@ body, html {
 }
 
 .bg-brands, .bg-contact {
-    height: 50%;
+    height: 80%;
+    position: inherit;
 }
 
 .about-main { 
@@ -256,6 +257,45 @@ body, html {
 
 #portafolio-content .portafolio-next img{
     border-radius: 100%;
+}
+
+.bg-brands .container-fluid ,
+.bg-brands .row {
+    height: 100%;
+}
+
+.bg-brands #friends-img img{
+    width: 90%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.bg-brands #friends-places .nav .nav-item a {
+    text-decoration: none;
+    font-size: 12px !important;
+    padding: 0 30px 5px 0;
+}
+
+.bg-brands #friends-places .nav .nav-item a:nth-child(1):hover {
+    color: #fff;
+}
+
+.bg-brands #friends-places .nav .nav-item a:nth-child(1):focus {
+    color: #043947;
+}
+
+#friends-places + .p-content {
+    width: 320px;
+    height: 50px;
+}
+
+#friends-places + .p-content .p-default {
+    color: #023a47;
+    font-size: 12px !important;
+    padding: 0px;
+    position: absolute;
+    width: 320px;
+    line-height: 14px;
+    margin-bottom: 0px;
 }
 
 footer {

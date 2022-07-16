@@ -145,7 +145,78 @@
         </main>
     </div>
 
-    <div class="bg-color bg-brands"></div>
+    <div class="bg-color bg-brands">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-1"></div>
+                <div class="col-md-4 text-md-start">
+                    <div class="container">
+                        <div class="row mb-2">
+                            <div class="col text-start text-uppercase">
+                                <h2 class="fw-lighter"><span class="fw-bold">HAPPY</span> FRIENDS.</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-start">
+                                <div id="friends-places" class="mb-3">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-uppercase font-color-default text-decoration-underline fw-bolder active" aria-current="page" href="#">Colombia</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-uppercase fw-bolder text-white" href="#">World wide</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="p-content">
+                                    <p class="d-none d-md-block p-default">
+                                        Good Relations are the base of our success. There is
+                                        no better testimonial than our clients, newly friends.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="container" id="friends-img">
+                        <div class="row row-cols-5 text-center">
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/dolex.png" alt="dolex">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/decameron.png" alt="decameron">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/urbansa.png" alt="urbansa">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/cream-helado.png" alt="cream helado">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/district.png" alt="district">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/alier.png" alt="alier">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/pacific.png" alt="pacific">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/manuelita.png" alt="la manuelita">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/toxicomano.png" alt="toxicomano">
+                            </div>
+                            <div class="col p-2">
+                                <img src="src/img/happy-friends/tecnologies.png" alt="optimal consulting technologies">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg-color bg-contact"></div>
 
     <div class="d-flex align-items-center p-2 bg-white about-pop">
