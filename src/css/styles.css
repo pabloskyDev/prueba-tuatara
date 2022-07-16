@@ -14,7 +14,6 @@
 body, html {
     height: 100%;
     font-family: 'Muli', sans-serif;
-    /* background-color: #01e2e8; */
 }
 
 .bg-img {
@@ -168,7 +167,6 @@ body, html {
 .btn-default-blue:hover {
     background-color: #ffffff;
     color: #043947;
-    /* box-shadow: 0 0 0 0.25rem rgb(4 57 71 / 20%) !important; */
 }
 
 .btn-default {
@@ -258,8 +256,6 @@ body, html {
     bottom: 0;
     left: 0;
     right: 0;
-    /* background-color: rgba(0, 0, 0, alpha0.5);
-    color: #fff; */
 }
 
 .font-color-default {

@@ -354,6 +354,5 @@
     <script src="libraries/jquery/jquery-3.6.0.min.js"></script>
     <script src="libraries/bootstrap-5/bootstrap.bundle.min.js"></script>
     <script src="libraries/bootstrap-5/bootstrap.min.js"></script>
-    <!-- <script src="src/js/app.js"></script> -->
 </body>
 </html>
