@@ -1,5 +1,17 @@
+/**
+ * @fileoverview CRUD lista de funciones que se ejecutan en relación al CRUD
+ * @version 1.0
+ * @author Juan Pablo Betancur Martinez <jpbetancur1999@gmail.com>
+ * @copyright pabloskyDev
+ * History
+ * v1.0 – La finalidad del archivo es darle funcionalidad a todos los elementos en los que se interactúa
+ * con el CRUD, además de contener la petición Ajax en XMLHttpRequest
+*/
 var url = 'api/users-api.php';
 
+/**
+ * Función que se ejecuta al abrir la pagina y carga las demás funciones por defecto.
+*/
 (function() {
     'use strict'
 
@@ -21,6 +33,11 @@ var url = 'api/users-api.php';
     consultar();
 })();
 
+/**
+ * {decidirAccion} Carga los datos después de ser ejecutada la función Ajax.
+ * @param  {array} data Carga los datos devueltos por la petición Ajax
+ * @param  {string} decidir Devuelve el valor de la acción ejecutada
+*/
 function decidirAccion(data, decidir) {
     if(decidir == 'Consultado'){
 
@@ -79,6 +96,13 @@ function decidirAccion(data, decidir) {
     }
 }
 
+/**
+ * {EnviarPeticion} Función Ajax con XMLHttpRequest()
+ * @param  {string} metodo Recibe el tipo de metodo a enviar a la API (GET, POST, PUT, DELETE)
+ * @param  {array} datos Recibe los parametros a ejecutar en la API
+ * @param  {string} decidir Recibe el tipo de accion a ejecutar
+ * @return  {array} Devuelve la respuesta de la peticion Ajax ejecutada 
+*/
 function EnviarPeticion(metodo, datos, decidir){
     var ajax = new XMLHttpRequest();
   
@@ -99,10 +123,16 @@ function EnviarPeticion(metodo, datos, decidir){
     }
 }
 
+/**
+ * {consultar} Carga por defecto los usuarios registrados
+*/
 function consultar(){
     EnviarPeticion('GET', '', 'Consultado');
 }
 
+/**
+ * {agregar} Agrega los usuarios registrados
+*/
 function agregar(){
     $("#agregarUsuario").modal('show');
 
@@ -112,6 +142,12 @@ function agregar(){
     EnviarPeticion('POST', dataForm, 'Agregado');
 }
 
+/**
+ * {modificar} Carga y envia la información a modificar
+ * @param  {string} id Recibe el id del usuario en especifico a modificar
+ * @param  {string} tipo 1, consulta la información del usuario a modificar; 
+ * 2, actualiza la información del usuario modificado
+*/
 function modificar(id, tipo){
     if(tipo == 1){
         $("#modificarUsuario").modal('show');
@@ -132,6 +168,10 @@ function modificar(id, tipo){
     }
 }
 
+/**
+ * {eliminar} Elimina usuarios
+ * @param  {string} id Recibe el id del usuario a eliminar
+*/
 function eliminar(id){
     $("#eliminarUsuario").modal('show');
     url += '?id='+id;
@@ -141,6 +181,9 @@ function eliminar(id){
     });
 }
 
+/**
+ * {cerrarPopup} Cierra el popup de los formularios y carga los datos de nuevo en pantalla
+*/
 function cerrarPopup() {
     $('body').removeClass('modal-open');
     $('.modal-backdrop').remove();
