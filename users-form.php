@@ -11,9 +11,9 @@
 <body>
     <!-- Consultar -->
     <div class="container-fluid">
-        <div class="row text-md-center text-light">
+        <div class="row text-md-center text-black">
             <div class="col-md-12">
-                <h1 class="fw-bold text-uppercase text-white">Usuarios</h1>
+                <h1 class="fw-bold text-uppercase m-3">Usuarios</h1>
             </div>
         </div>
         <div class="row text-center">
@@ -105,9 +105,8 @@
     <div class="modal fade" id="modificarUsuario" tabindex="-1" aria-labelledby="modificarUsuarioLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modificarUsuarioLabel">Modificar usuario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title text-white m-auto" id="modificarUsuarioLabel">Modificar usuario</h5>
             </div>
             <div class="modal-body">
                 <form id="frm_modificar" method="PUT">
@@ -130,7 +129,7 @@
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer m-auto">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-warning" id="btn_modificar">Modificar</button>
             </div>
@@ -142,14 +141,13 @@
     <div class="modal fade" id="eliminarUsuario" tabindex="-1" aria-labelledby="eliminarUsuarioLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="eliminarUsuarioLabel">Eliminar usuario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title text-white m-auto" id="eliminarUsuarioLabel">Eliminar usuario</h5>
             </div>
             <div class="modal-body text-center">
                 ¿Seguro que deseas eliminar este usuario?
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer m-auto">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-danger" id="btn_eliminar">Aceptar</button>
             </div>
