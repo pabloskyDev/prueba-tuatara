@@ -287,7 +287,63 @@
     </div>
 
     <footer>
-
+        <div class="container h-100 p-5">
+            <div class="row h-70 d-flex align-items-baseline" id="footer-links">
+                <div class="col-md-1"></div>
+                <div class="col-md-2 font-color-default p-3">
+                    <h6 class="text-uppercase fw-bold text-start mb-3">Contact</h6>
+                    <ul>
+                        <li><a href="#">Bogotá| Colombia</a></li>
+                        <li><a href="#">hablemos@tuatara.co</a></li>
+                        <li><a href="#">Cr 20+t 142 - 23</a></li>
+                        <li><a href="#">(57) (1) 3002100127</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 font-color-default p-3">
+                    <h6 class="text-uppercase fw-bold text-start mb-2">About us</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Software and Tech</a></li>
+                        <li><a href="#">Pure Design</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Coworking</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 font-color-default p-3">
+                    <h6 class="text-uppercase fw-bold text-start mb-2">About us</h6>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Behance</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 font-color-default p-3">
+                    <img src="src/img/icons/nido-footer.png" alt="nido-logo" class="img mb-2">
+                    <div class="p-content">
+                        <p class="d-none d-md-block p-default">
+                            Good Relations are the base of our success. There is no better testimonial than
+                            our clients, newly friends.
+                        </p>
+                    </div>
+                    <div class="input-group mb-3 w-75">
+                        <input type="text" class="form-control rounded-pill border border-opacity-25 input-contact" placeholder="Lorem ipsum" aria-label="Lorem ipsum" aria-describedby="btn-contact">
+                        <button class="btn rounded-pill" type="button" id="btn-contact">CONTACT</button>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+            <hr >
+            <div class="row h-30 d-flex justify-content-evenly">
+                <div class="col-md-12">
+                    footer
+                </div>
+                <div class="col-md-12">
+                    footer redes
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="libraries/jquery/jquery-3.6.0.min.js"></script>

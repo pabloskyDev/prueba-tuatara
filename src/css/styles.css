@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    list-style-type: none;
 }
 
 body, html {
@@ -363,7 +364,33 @@ body, html {
 }
 
 footer {
-    height: 50%;
+    height: 55%;
     background-color: #ffffff;
     bottom: 0px;
+}
+
+footer #footer-links ul {
+    padding: 0px !important;
+}
+
+footer #footer-links ul li a {
+    text-decoration: none;
+    font-size: 12px !important;
+    padding: 0 0 5px 0;
+    color: #043947;
+}
+
+#footer-links .p-content {
+    width: 400px;
+    height: 80px;
+}
+
+#footer-links .p-default {
+    color: #023a47;
+    font-size: 12px !important;
+    padding: 0px;
+    position: absolute;
+    width: 400px;
+    line-height: 14px;
+    margin-bottom: 0px;
 }
