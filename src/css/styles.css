@@ -114,17 +114,29 @@ body, html {
     height: 100%;
 }
 
-.about-pop .about-text {
+.about-pop .p-content {
+    width: 500px;
+    height: 40px;
+}
+
+.about-pop .p-default {
     color: #023a47;
+    font-size: 12px !important;
+    padding: 0px;
+    position: absolute;
+    width: 500px;
+    line-height: 14px;
+    margin-bottom: 0px;
 }
 
 .img-services img{
     width: 100%;
 }
 
-#btn-contact {
+.input-cls-contact + .btn-input-contact {
     background-color: #c91a98;
     color: #fff;
+    font-size: 12px !important;
     width: 60%;
     position: absolute;
     left: 180px;
@@ -136,10 +148,11 @@ body, html {
 }
 
 .input-contact {
+    font-size: 12px !important;
     height: 26px;
 }
 
-#btn-contact:focus, .input-contact:focus {
+.input-cls-contact + .btn-input-contact:focus, .input-contact:focus {
     box-shadow: 0 0 0 0.25rem rgb(225 25 169 / 25%) !important;
 }
 
@@ -153,8 +166,9 @@ body, html {
 }
 
 .btn-default-blue:hover {
-    color: #ffffff;
-    box-shadow: 0 0 0 0.25rem rgb(4 57 71 / 20%) !important;
+    background-color: #ffffff;
+    color: #043947;
+    /* box-shadow: 0 0 0 0.25rem rgb(4 57 71 / 20%) !important; */
 }
 
 .btn-default {
@@ -265,7 +279,7 @@ body, html {
 }
 
 #portafolio-content .p-content {
-    width: 450px;
+    width: 380px;
     height: 80px;
 }
 
@@ -274,7 +288,7 @@ body, html {
     font-size: 12px !important;
     padding: 0px;
     position: absolute;
-    width: 450px;
+    width: 380px;
     line-height: 14px;
     margin-bottom: 0px;
 }
@@ -372,7 +386,7 @@ body, html {
 }
 
 footer {
-    height: 55%;
+    height: 60%;
     background-color: #ffffff;
     bottom: 0px;
 }
@@ -389,7 +403,7 @@ footer #footer-links ul li a {
 }
 
 #footer-links .p-content {
-    width: 400px;
+    width: 350px;
     height: 80px;
 }
 
@@ -398,7 +412,23 @@ footer #footer-links ul li a {
     font-size: 12px !important;
     padding: 0px;
     position: absolute;
-    width: 400px;
+    width: 350px;
     line-height: 14px;
     margin-bottom: 0px;
+}
+
+#footer-rights .socialM{
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+}
+
+#footer-rights .socialM img{
+    width: 100%;
+}
+
+#footer-rights .letter-default {
+    color: #023a47;
+    font-size: 12px !important;
+    padding: 0px;
 }

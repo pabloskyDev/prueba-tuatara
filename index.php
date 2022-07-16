@@ -260,14 +260,16 @@
         </div>
     </div>
 
-    <div class="d-flex align-items-center p-2 bg-white about-pop">
-        <div class="flex-shrink-2 about-img pe-sm-0 w-45">
+    <div class="h-25 d-flex align-items-center p-2 bg-white about-pop">
+        <div class="about-img pe-sm-0 w-45">
             <img src="src/img/about-tuatara.png" alt="About tuatara" class="img">
         </div>
-        <div class="flex-grow-1 ms-2 ps-md-5 ps-sm-0 text-md-start w-55 fs-6 about-text lead">
-            Tuataras, New Zealand Reptiles inspire us with ¡ts behavior to breathe what we call</br>
-            Mutualism, a way of living, managing and relating with our beloved clients. Its goal is to</br>
-            harvest long-term relations where transparency, trust, and communication ends in a win-win.
+        <div class="ms-2 ps-md-5 ps-sm-0 text-md-start w-55 p-content ">
+            <p class="d-none d-md-block p-default">
+                Tuataras, New Zealand Reptiles inspire us with ¡ts behavior to breathe what we call
+                Mutualism, a way of living, managing and relating with our beloved clients. Its goal is to
+                harvest long-term relations where transparency, trust, and communication ends in a win-win.
+            </p>
         </div>
     </div>
 
@@ -281,16 +283,15 @@
         <span class="fw-lighter text-start txt-span pb-4">Building innovation with your brand</span>
         
         <div class="input-group mb-3 w-75">
-            <input type="text" class="form-control rounded-pill border-0 input-contact" placeholder="Lorem ipsum" aria-label="Lorem ipsum" aria-describedby="btn-contact">
-            <button class="btn rounded-pill" type="button" id="btn-contact">CONTACT</button>
+            <input type="text" class="form-control rounded-pill border-0 input-contact input-cls-contact" placeholder="Lorem ipsum" aria-label="Lorem ipsum" aria-describedby="btn-contact">
+            <button class="btn rounded-pill btn-input-contact" type="button" id="btn-contact">CONTACT</button>
         </div>
     </div>
 
     <footer>
         <div class="container h-100 p-5">
-            <div class="row h-70 d-flex align-items-baseline" id="footer-links">
-                <div class="col-md-1"></div>
-                <div class="col-md-2 font-color-default p-3">
+            <div class="row h-60 d-flex align-items-baseline" id="footer-links">
+                <div class="col-md-3 font-color-default p-3">
                     <h6 class="text-uppercase fw-bold text-start mb-3">Contact</h6>
                     <ul>
                         <li><a href="#">Bogotá| Colombia</a></li>
@@ -299,7 +300,7 @@
                         <li><a href="#">(57) (1) 3002100127</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2 font-color-default p-3">
+                <div class="col-md-3 font-color-default p-3">
                     <h6 class="text-uppercase fw-bold text-start mb-2">About us</h6>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -328,19 +329,23 @@
                         </p>
                     </div>
                     <div class="input-group mb-3 w-75">
-                        <input type="text" class="form-control rounded-pill border border-opacity-25 input-contact" placeholder="Lorem ipsum" aria-label="Lorem ipsum" aria-describedby="btn-contact">
-                        <button class="btn rounded-pill" type="button" id="btn-contact">CONTACT</button>
+                        <input type="text" class="form-control rounded-pill border border-opacity-25 input-contact input-cls-contact" placeholder="Lorem ipsum" aria-label="Lorem ipsum" aria-describedby="btn-contact">
+                        <button class="btn rounded-pill btn-input-contact" type="button" id="btn-contact">CONTACT</button>
                     </div>
                 </div>
-                <div class="col-md-1"></div>
             </div>
             <hr >
-            <div class="row h-30 d-flex justify-content-evenly">
-                <div class="col-md-12">
-                    footer
+            <div class="row h-30 d-flex justify-content-between" id="footer-rights">
+                <div class="col-md-2">
+                    <p class="letter-default">&copy 2022 by Tuatara</p>
                 </div>
-                <div class="col-md-12">
-                    footer redes
+                <div class="col-md-2">
+                    <div class="d-flex flex-row-reverse justify-content-around p-0">
+                        <div class="text-center socialM"><img src="src/img/icons/social-icons/facebook.png" alt="Facebook" class="img"></div>
+                        <div class="text-center socialM"><img src="src/img/icons/social-icons/instagram.png" alt="Instagram" class="img"></div>
+                        <div class="text-center socialM"><img src="src/img/icons/social-icons/linkedin.png" alt="Linkedin" class="img"></div>
+                        <div class="text-center socialM"><img src="src/img/icons/social-icons/whatsapp.png" alt="WhatsApp" class="img"></div>
+                    </div>
                 </div>
             </div>
         </div>
