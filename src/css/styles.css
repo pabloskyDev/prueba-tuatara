@@ -17,16 +17,19 @@ body, html {
 }
 
 .bg-img {
-    height: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
-    background-size: auto 80%;
-    background-position: 70% 0;
-    padding-bottom: 2rem;
+    background-size: auto 100vh;
+    background-position: 100vh 0;
     position: relative;
 
 }
 
-.main-img { background-image: url('../img/bg/bg-1-home.jpg'); }
+.main-img { 
+    background-image: url('../img/bg/bg-1-home.jpg'); 
+    max-height: 100vh;
+    object-fit: cover;
+}
 
 .header {
     background: url(../img/bg/bg-1-home.jpg) no-repeat center;
@@ -191,9 +194,33 @@ body, html {
     box-shadow: none;
     border: 0px;
 }
+.projects {
+    background: #01e2e8;
+}
 
-/* .styleSelect select { background: transparent; width: 168px; padding: 5px; font-size: 16px; line-height: 1; border: 0; border-radius: 0; height: 34px; -webkit-appearance: none; color: #000; } .styleSelect { width: 140px; height: 34px; overflow: hidden; background: url("images/downArrow.png") no-repeat right #fff; border: 2px solid #000; } */
+.main .carousel-inner img{
+    max-height: 100vh;
+    object-fit: cover;
+}
 
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, alpha0.5);
+    color: #fff;
+}
+
+#carousel .overlay .container-fluid ,
+#carousel .overlay .row {
+    height: 100%;
+}
 
 footer {
     height: 50%;

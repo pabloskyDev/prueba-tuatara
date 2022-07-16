@@ -18,15 +18,17 @@ function connect($db)
     }
 }
 
-//Obtener parametros para consultas
-function getParams($input)
+function bindValuesParams($input, $stateSQL)
 {
-   $filterParams = [];
    foreach($input as $param)
    {
-        $filterParams[] = "$param=:$param";
+        $stateSQL->bindValue(':id', addslashes($param->id));
+        $stateSQL->bindValue(':docActualizar', addslashes($param->docActualizar));
+        $stateSQL->bindValue(':nomActualizar', addslashes($param->nomActualizar));
+        $stateSQL->bindValue(':apeActualizar', addslashes($param->apeActualizar));
+        $stateSQL->bindValue(':emailActualizar', addslashes($param->emailActualizar));
    }
-   return implode(", ", $filterParams);
+   return $stateSQL;
 }
 
 //Asociar todos los parametros a un sql

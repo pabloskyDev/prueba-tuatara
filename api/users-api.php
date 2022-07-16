@@ -78,22 +78,17 @@
     //Actualizar
     if ($_SERVER['REQUEST_METHOD'] == 'PUT')
     {
-        parse_str(file_get_contents('php://input'), $_PUT);
-        header('Content-Disposition: form-data; name="fieldName"; filename="users-form.php"');
+        // parse_str(file_get_contents('php://input'), $_PUT);
+        $input[] = json_decode(file_get_contents('php://input'));
+        // header('Content-Disposition: form-data; name="fieldName"; filename="users-form.php"');
 
-        $id = $_GET['id'];
-        $input = $_PUT;
-        // echo print_r($input, true);
-
-        $usuarioId = $id;
-        $fields = getParams($input);
         $sql = "
             UPDATE usuarios
-            SET $fields, f_actualizacion = NOW()
-            WHERE id='$usuarioId'
+            SET documento=:docActualizar, nombre=:nomActualizar, apellido=:apeActualizar, email=:emailActualizar, f_actualizacion = NOW()
+            WHERE id=:id
             ";
         $statement = $dbConn->prepare($sql);
-        bindAllValues($statement, $input);
+        $statement = bindValuesParams($input, $statement);
         $statement->execute();
 
         $updated = $statement->rowCount();
@@ -107,7 +102,7 @@
         exit();
     }
 
-    //En caso de que ninguna de las opciones anteriores se haya ejecutado
+    //En caso de que ninguna de las opciones se haya ejecutado
     header("HTTP/1.1 400 Bad Request");
 
 ?>

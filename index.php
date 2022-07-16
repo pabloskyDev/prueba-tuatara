@@ -96,23 +96,43 @@
             </div>
         </div>
     </div>
-    <div class="bg-img projects">
-        <!-- Carousel start-->
-        <div id="carousel-projects" class="carousel slide border-0" data-bs-ride="carousel">
-            <div class="carousel-inner content-projects border-0">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img src="src/img/projects/Proyect-1.jpg" class="d-block w-100 border-0" alt="Proyect-1">
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="src/img/projects/Proyect-2.jpg" class="d-block w-100 border-0" alt="Proyect-2">
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="src/img/projects/Proyect-3.jpg" class="d-block w-100 border-0" alt="Proyect-3">
-              </div>
+    <div class="projects">
+        <main class="main">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-pause="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="src/img/projects/Proyect-1.jpg" class="d-block w-100" alt="project-1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="src/img/projects/Proyect-2.jpg" class="d-block w-100" alt="project-2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="src/img/projects/Proyect-3.jpg" class="d-block w-100" alt="project-3">
+                    </div>
+                    <div class="overlay carousel-caption">
+                        <div class="container-fluid">
+                            <!-- <div class="row mb-5">
+                                <div class="col text-start text-uppercase">
+                                    <h2 class="fw-lighter"><span class="fw-bold">FULL</span> SERVICE.</h2>
+                                </div>
+                            </div> -->
+                            <div class="row align-items-center">
+                                <div class="col-md-3 offset-md-2 text-center text-md-start">
+                                    <h2 class="text-uppercase text-bg-dark fw-lighter mb-5"><span class="fw-bold">OUR</span> PORTAFOLIO.</h2>
+                                    <div class="portafolio-content">
+                                        <p class="d-none d-md-block">Platzi llega por primera vez a Hawaii! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes de PLatzi y a los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
+                                        <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
+                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Carousel end-->
+        </main>
     </div>
+
     <div class="bg-color bg-brands"></div>
     <div class="bg-color bg-contact"></div>
 
