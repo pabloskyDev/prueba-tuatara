@@ -129,6 +129,14 @@ body, html {
     position: absolute;
     left: 180px;
     z-index: 1001;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-contact {
+    height: 26px;
 }
 
 #btn-contact:focus, .input-contact:focus {
