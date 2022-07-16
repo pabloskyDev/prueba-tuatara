@@ -213,13 +213,49 @@ body, html {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, alpha0.5);
-    color: #fff;
+    /* background-color: rgba(0, 0, 0, alpha0.5);
+    color: #fff; */
+}
+
+.font-color-default {
+    color: #043947;
 }
 
 #carousel .overlay .container-fluid ,
 #carousel .overlay .row {
     height: 100%;
+}
+
+#carousel .overlay #portafolio-content {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #043947;
+    padding: 10px;
+    height: 200px;
+}
+
+#portafolio-content .p-content {
+    width: 450px;
+    height: 80px;
+}
+
+#portafolio-content .p-default {
+    color: #023a47;
+    font-size: 12px !important;
+    padding: 0px;
+    position: absolute;
+    width: 450px;
+    line-height: 14px;
+    margin-bottom: 0px;
+}
+
+#portafolio-content a {
+    text-decoration: none;
+    color: #043947;
+    font-size: 12px !important;
+}
+
+#portafolio-content .portafolio-next img{
+    border-radius: 100%;
 }
 
 footer {

@@ -111,18 +111,30 @@
                     </div>
                     <div class="overlay carousel-caption">
                         <div class="container-fluid">
-                            <!-- <div class="row mb-5">
-                                <div class="col text-start text-uppercase">
-                                    <h2 class="fw-lighter"><span class="fw-bold">FULL</span> SERVICE.</h2>
-                                </div>
-                            </div> -->
                             <div class="row align-items-center">
-                                <div class="col-md-3 offset-md-2 text-center text-md-start">
-                                    <h2 class="text-uppercase text-bg-dark fw-lighter mb-5"><span class="fw-bold">OUR</span> PORTAFOLIO.</h2>
-                                    <div class="portafolio-content">
-                                        <p class="d-none d-md-block">Platzi llega por primera vez a Hawaii! Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes de PLatzi y a los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
-                                        <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
+                                <div class="col-md-1"></div>
+                                <!-- offset-md-1 -->
+                                <div class="col-md-4 text-md-start">
+                                    <h2 class="text-uppercase font-color-default fw-lighter mb-5"><span class="fw-bold">OUR</span> PORTAFOLIO.</h2>
+                                    <div class="d-md-block mt-3" id="portafolio-content">
+                                        <h6 class="text-uppercase font-color-default fw-bold mb-0 p-0">Nombre del proyecto</h6>
+                                        <div class="d-flex p-0 mb-4">
+                                            <a class="btn-group pe-3 text-uppercase fw-bold" href="#">Pure Design</a>
+                                            <a class="btn-group ps-3 text-capitalize border-start border-dark" href="#">Branding</a>
+                                        </div>
+                                        <div class="p-content">
+                                            <p class="d-none d-md-block p-default">
+                                                Lorem ipsum vestibulum lobortis condimentum ex, magna ut
+                                                eu velit lobortis Nam molestie. Justo, laoreet, nunc sit erat
+                                                consequat massa elit. Ut ante. Sed, turpis diam ligula. Auctor
+                                                litora Morbi.
+                                            </p>
+                                        </div>
+                                        <div class="portafolio-next d-flex justify-content-end">
+                                            <span class="pe-4 text-uppercase fw-bold">Next Project</span>
+                                            <img src="src/img/row-end.png" alt="row end" class="img">
+                                        </div>
+                                            
                                     </div>
                                 </div>
                             </div>
