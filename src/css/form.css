@@ -1,0 +1,19 @@
+@import url('../../libraries/fonts/Muli-Bold.ttf');
+@import url('../../libraries/fonts/Muli-SemiBold.ttf');
+@import url('../../libraries/fonts/Muli.ttf');
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+    background-color: #E4DCCF;
+    color: #000;
+}

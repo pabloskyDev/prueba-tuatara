@@ -97,6 +97,7 @@
             echo json_encode('actualizado exitosamente');
             exit();
         }else {
+            echo json_encode('error en actualizacion');
             header("HTTP/1.1 404 Not found");
         }
         exit();

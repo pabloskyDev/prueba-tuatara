@@ -1,6 +1,25 @@
 var url = 'api/users-api.php';
 
 (function() {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }else{
+                agregar();
+            }
+
+            form.classList.add('was-validated');
+        }, false)
+    })
     consultar();
 })();
 
@@ -58,6 +77,7 @@ function decidirAccion(data, decidir) {
     
         $("#eliminarUsuario").modal('hide');
         cerrarPopup();
+        location.reload();
     }
 }
 
@@ -87,7 +107,6 @@ function consultar(){
 
 function agregar(){
     $("#agregarUsuario").modal('show');
-    // abrirPopup('agregarUsuario');
 
     var form = document.querySelector('#frm_registrar');
     var dataForm = new FormData(form);
@@ -97,8 +116,7 @@ function agregar(){
 
 function modificar(id, tipo){
     if(tipo == 1){
-        // $("#agregarUsuario").modal('show');
-        // abrirPopup('agregarUsuario');
+        $("#modificarUsuario").modal('show');
 
         url += '?id='+id;
         EnviarPeticion('GET', '', 'CargarModificar');
@@ -118,7 +136,6 @@ function modificar(id, tipo){
 
 function eliminar(id){
     $("#eliminarUsuario").modal('show');
-    // abrirPopup('eliminarUsuario');
     url += '?id='+id;
 
     document.getElementById('btn_eliminar').addEventListener('click', function () {
@@ -132,8 +149,3 @@ function cerrarPopup() {
 
     consultar();
 }
-
-// function abrirPopup(accion) {
-//     $('body').addClass('modal-open');
-//     $('#'+accion).addClass('modal-backdrop');
-// }
