@@ -217,7 +217,48 @@
             </div>
         </div>
     </div>
-    <div class="bg-color bg-contact"></div>
+    <div class="bg-color bg-contact">
+        <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center">
+                <div class="col-md-6 col-sm-12 img-contact">
+                    <img src="src/img/contacto-home.png" alt="contact">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <div class="col text-start text-uppercase">
+                                <h2 class="fw-lighter m-0"><span class="fw-bold">CONTACT</span> US.</h2>
+                                <h6 class="fw-bold m-0"><small class="contact-sub">Let's talk</small></h6>
+                            </div>
+                        </div>
+                        <div class="row" id="contact-form">
+                            <div class="col-12 text-start">
+                                <form class="form text-end">
+                                    <div>
+                                        <input type="text" class="form-control default-input" id="contact-name" placeholder="Name">
+                                        <hr class="border-select mb-3"> 
+                                    </div>                               
+                                    <div>
+                                        <input type="email" class="form-control default-input" id="contact-email" placeholder="Email">
+                                        <hr class="border-select mb-3"> 
+                                    </div>
+                                    <div>
+                                        <input type="text" class="form-control default-input" id="contact-phone" placeholder="Phone">
+                                        <hr class="border-select mb-3"> 
+                                    </div>
+                                    <div>
+                                        <input type="text" class="form-control default-input" id="contact-opinion" placeholder="What's on your mind?">
+                                        <hr class="border-select mb-3">
+                                    </div>
+                                    <button type="submit" class="btn btn-default rounded-pill align-self-center text-uppercase fw-bold">Contact</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="d-flex align-items-center p-2 bg-white about-pop">
         <div class="flex-shrink-2 about-img pe-sm-0 w-45">

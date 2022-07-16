@@ -60,7 +60,12 @@ body, html {
     position: inherit;
 }
 
-.bg-brands, .bg-contact {
+.bg-brands {
+    height: 60%;
+    position: inherit;
+}
+
+.bg-contact {
     height: 80%;
     position: inherit;
 }
@@ -143,6 +148,21 @@ body, html {
     box-shadow: 0 0 0 0.25rem rgb(4 57 71 / 20%) !important;
 }
 
+.btn-default {
+    background-color: #ffffff;
+    color: #043947;
+    font-size: 12px !important;
+    padding: 0px !important;
+    width: 20%;
+    height: 10%;
+}
+
+.btn-default:hover {
+    background-color: #043947;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 20%) !important;
+}
+
 .default-select {
     background: #01e2e8;
     background-image: url("../img/row-down.png");
@@ -195,6 +215,7 @@ body, html {
     box-shadow: none;
     border: 0px;
 }
+
 .projects {
     background: #01e2e8;
 }
@@ -296,6 +317,49 @@ body, html {
     width: 320px;
     line-height: 14px;
     margin-bottom: 0px;
+}
+
+.img-contact img{
+    width: 95%;
+}
+
+.bg-contact .contact-sub {
+    font-size: 12px !important;
+}
+
+.default-input {
+    background: #01e2e8;
+    color: #043947;
+    padding: 0px;
+    margin-bottom: 2px !important;
+    border: 0px !important;
+    font-size: 12px !important;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+.border-input {
+    background: #043947;
+    padding: 0px;
+    margin: 0px;
+}
+
+.default-input:focus{
+    box-shadow: none;
+    background: #01e2e8;
+    color: #043947;
+    padding: 0px;
+    margin-bottom: 2px !important;
+    border: 0px !important;
+    font-size: 12px !important;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 }
 
 footer {
